@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #333;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #555;
+            display: flex;
+            justify-content: space-around;
+            padding: 0.5em;
+            border-bottom: 2px solid #777;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0;
+            padding: 0;
+            border-right: 2px solid #777;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 1em;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        .submenu {
+            position: relative;
+        }
+
+        .submenu .submenu-itens {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #eee;
+            border: 2px solid #ccc;
+            border-top: none;
+        }
+
+        .submenu:hover .submenu-itens {
+            display: block;
+        }
+
+        .submenu-itens li {
+            border: none;
+        }
+
+        .menu-section {
+            padding: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .redes-sociais a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Fórum de Tecnologia
+    </header>
+
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li class="submenu">
+                <a href="#">Menu</a>
+                <ul class="submenu-itens">
+                    <li><a href="#o-que-e-power-bi">O que é Power BI?</a></li>
+                    <li><a href="#linguagens-power-bi">Linguagens no Power BI</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=58494">Download Power BI</a></li>
+                    <li><a href="#aula-1">Aula 1</a></li>
+                    <li><a href="#aula-2">Aula 2</a></li>
+                </ul>
+            </li>
+            <li><a href="novidades.html">Novidades</a></li>
+        </ul>
+    </nav>
+
+    <section id="power-bi-material" class="menu-section">
+        <h2>Material do Curso Power BI</h2>
+        <p>
+        <h3>Nesta página você encontrará todo o material utilizado em nossas aulas de Power BI. Aproveite ao máximo nossas aulas.</h3>
+        </p>
+    </section>
+
+    <section id="o-que-e-power-bi" class="menu-section">
+        <h2>O que é Power BI?</h2>
+        <p>
+            O Power BI, desenvolvido pela Microsoft, é uma suíte de ferramentas de análise de negócios que permite visualizar e compartilhar insights a partir de dados. Com recursos de business intelligence (BI), ele auxilia na tomada de decisões, análise de dados e monitoramento de desempenho.
+        </p>
+        <p>
+            Desde seu lançamento em 2013 como um complemento do Excel, o Power BI evoluiu para incluir o Power BI Desktop e o Power BI Service, oferecendo uma plataforma abrangente baseada em nuvem.
+        </p>
+        <p>
+            Com uma comunidade ativa e atualizações constantes, o Power BI se destaca por sua facilidade de uso, conectividade com diversas fontes de dados, visualizações poderosas e integração com outras ferramentas Microsoft.
+        </p>
+        <p>
+            É amplamente utilizado globalmente em diversas indústrias, sendo reconhecido como uma ferramenta líder em visualização de dados e análise de negócios.
+        </p>
+    </section>
+    
+
+    <section id="linguagens-power-bi" class="menu-section">
+        <h2>Linguagens utilizada no Power BI</h2>
+        <h3>As principais linguagens utilizadas</h3>
+        <p>No Power BI, as principais linguagens utilizadas são DAX (Data Analysis Expressions) e M Query Language (também conhecida como Power Query). Vamos explorar os benefícios de cada uma:</p>
+    
+        <p><strong>DAX (Data Analysis Expressions):</strong></p>
+    
+        <p><strong>Benefícios:</strong></p>
+        <ul>
+            <li><strong>Expressividade:</strong> DAX é uma linguagem expressiva que permite criar fórmulas complexas para análise de dados. Ela é semelhante a fórmulas de planilhas, facilitando a transição para usuários familiarizados com o Excel.</li>
+            <li><strong>Integração com Modelagem de Dados:</strong> DAX é integrado ao modelo de dados do Power BI, permitindo a criação de medidas calculadas, colunas calculadas e tabelas usando fórmulas DAX. Essas medidas podem ser usadas em relatórios para análises mais avançadas.</li>
+            <li><strong>Suporte a Contextos de Filtragem:</strong> DAX é projetada para trabalhar com contextos de linha e contexto de filtro, permitindo cálculos dinâmicos que respondem a diferentes níveis de granularidade nos dados.</li>
+            <h3></h3><p><a href="https://learn.microsoft.com/pt-br/dax/dax-overview"download>Acesse o link para conhecer mais</a></p></h3>
+        </ul>
+    
+        <p><strong>M Query Language (Power Query):</strong></p>
+    
+        <p><strong>Benefícios:</strong></p>
+        <ul>
+            <li><strong>Transformação de Dados:</strong> M Query Language é utilizado no Power Query para a transformação de dados. Ele fornece uma linguagem declarativa para realizar operações de limpeza, filtragem, mesclagem e transformação em conjuntos de dados.</li>
+            <li><strong>Conectividade:</strong> M Query oferece conectividade a uma ampla variedade de fontes de dados, desde bancos de dados relacionais até arquivos de texto e APIs da web. Ele facilita a importação e a preparação de dados de diferentes origens para análise no Power BI.</li>
+            <li><strong>Automatização de Processos:</strong> Pode-se gravar scripts M Query para automatizar a limpeza e transformação de dados. Isso é especialmente útil ao lidar com grandes conjuntos de dados ou quando as transformações precisam ser repetidas regularmente.</li>
+            <h3></h3><p><a href="https://learn.microsoft.com/pt-br/powerquery-m/"download>Acesse o link para conhecer mais</a></p></h3>
+        </ul>
+    
+        <p>Em resumo, DAX é fundamental para realizar cálculos e análises avançadas dentro do Power BI, enquanto a linguagem M Query é essencial para a preparação e transformação eficiente de dados antes de serem carregados no modelo de dados. Ambas as linguagens desempenham papéis complementares, contribuindo para a criação de relatórios e dashboards poderosos no Power BI.</p>
+    </section>    
+
+    <section id="download-power-bi" class="menu-section">
+        <h2>Download Power BI</h2>
+       <h3><a href="https://www.microsoft.com/pt-br/download/details.aspx?id=58494"download>Download do Power BI desktop</a></h3>
+        <p>Efetuei o download do Power BI desktop referente ao idioma do seu computador.</p>
+    </section>
+
+    <section id="aula-1" class="menu-section">
+        <h2>Aula 1</h2>
+        <h3><a href="https://www.microsoft.com/pt-br/download/details.aspx?id=58494"download>Apresentação Aula 1</a></h3>
+        <h3><p></p><a href="https://www.microsoft.com/pt-br/download/details.aspx?id=58494"download>Base de Dados</a></p></h3>
+        <p>Nos links acima estão disponíveis os Materiais da Aula 01.</p>
+    </section>
+
+    <section id="aula-2" class="menu-section">
+        <h2>Aula 2</h2>
+        <p>Conteúdo da Aula 2.</p>
+    </section>
+
+    <footer>
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/seu-usuario-instagram" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="mailto:seu@email.com">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://www.linkedin.com/in/seu-usuario-linkedin" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
